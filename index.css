@@ -1,0 +1,29 @@
+@import 'tailwindcss';
+
+body {
+    @apply bg-gray-100 text-gray-800 font-sans;
+}
+
+h1 {
+    @apply text-blue-500 text-center mt-12;
+}
+.nav-link {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #1f2937;
+    font-weight: bold;
+}
+
+.btn {
+    background-color: #3b82f6;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #2563eb;
+}
