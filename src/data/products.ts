@@ -1395,6 +1395,4 @@ export const products: Product[] = [
     origin: 'France',
     sku: 'DAI-BRIE-200',
   },
-];
-
-export default products;
+]
