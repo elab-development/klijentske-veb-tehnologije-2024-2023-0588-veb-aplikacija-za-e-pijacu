@@ -1,73 +1,46 @@
-# React + TypeScript + Vite
+Agrimart
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+AgriMart je moderna "e-pijaca" koja omogućava korisnicima da jednostavno i brzo kupe sveže voće i povrće direktno od proizvođača. Cilj platforme je da poveže lokalne poljoprivrednike sa krajnjim potrošačima kroz efikasno online iskustvo.
 
-Currently, two official plugins are available:
+Ključne funkcionalnosti
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Pregled dostupnih proizvoda (voće i povrće)
+- Filtriranje po kategorijama, ceni i poreklu
+- Korpa i jednostavna kupovina
+-Sistem za registraciju i prijavu korisnika
 
-## React Compiler
+  Ovaj projekat je razvijen koristešćenjem sledećih modernih frontend tehnologija:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+-React
+-TypeScript**
+-Vite
 
-## Expanding the ESLint configuration
+Pokretanje lokalno
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+1. Proveri da li imaš Node.js i npm instalirane
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Otvori terminal i pokreni:
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+node -v
+npm -v
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Ako dobiješ verzije spreman si. Ako ne, instaliraj Node.js sa:
+👉 https://nodejs.org/
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+2. Kloniraj repozitorijum
+
+bash
+git clone https://github.com/elab-development/klijentske-veb-tehnologije-2024-2023-0588-veb-aplikacija-za-e-pijacu
+cd agrimart
+
+3. Instaliraj zavisnosti
+npm run dev
+
+4. Otvori aplikaciju
+
+Otvorite u browseru:
+
+http://localhost:5173
+(ili URL koji Vite prikaže u terminalu)
