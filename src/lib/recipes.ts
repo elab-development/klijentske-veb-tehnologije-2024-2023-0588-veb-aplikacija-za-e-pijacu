@@ -1,4 +1,3 @@
-
 import type { ProductType } from '../data/products';
 
 export type Recipe = {
